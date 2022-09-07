@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one::before{
+            content: 'good morning';
+            content: url(images/my\ pic.jpg);
+            width: 150px;
+            height: 300px;
+        }
+        .one::after{
+            content: 'have a nice day';
+        }
+        h1::first-letter{
+            color: red;
+            font-size: 40px;
+        }
+        p::first-line{
+            color: aqua;
+            background-color: black;
+        }
+        p::selection{
+            background-color: yellowgreen;
+            color: red;
+        }
+        p{
+            border: 2px solid;
+            width: 300px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="one">welcome to my site</h1>
+    <h1>my site</h1>
+    <p>Login :
+        Admin login Perform in static way , we define admin username and password 
+        and admin can’t change it.
+
+ Manage User :
+        Admin manage of site, admin can add and remove user from site.
+
+</p>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{box-sizing: border-box;}
+        .main{
+            width: 80%;
+            height: 600px;
+            background-color: rgb(247, 242, 204);
+            box-shadow: 10px 11px 15px gray;
+            margin-left: 130px;
+        }
+        .one{
+            background-image: 
+            linear-gradient(
+            rgba(231, 129, 226, 0.75),
+            rgba(138, 133, 197, 0.75),
+            rgba(37, 45, 153, 0.56)), url(images/form4.jpg);
+            height: 550px;
+            width: 40%;
+            margin-top: -580px;
+            margin-left: 200px;
+        }
+        .form{
+            width: 30%;
+            height: 550px;
+            background-color: rgb(212, 209, 209);
+            padding: 40px;
+            margin-top: -550px;
+            margin-left: 728px;
+            box-shadow: 10px 11px 12px gray;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        input
+        {
+            width: 200px;
+            height: 30px;
+            box-shadow: 6px 7px 7px lightgray;
+            border: none;
+            margin-left: -5px;
+            background-color: white;
+        }
+         .fir button{
+            width: 150px;
+            height: 30px;
+            background: linear-gradient(rgba(231, 129, 226, 0.75),
+            rgba(138, 133, 197, 0.75),
+            rgba(37, 45, 153, 0.56));
+            border-radius: 50px;
+            color: white;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 15px;
+            border: none;
+            transform: translate();
+        }
+        
+        .sec button{
+            width: 150px;
+            height: 30px;
+            border-radius: 50px;
+            background: linear-gradient(rgba(231, 129, 226, 0.75),
+            rgba(138, 133, 197, 0.75),
+            rgba(37, 45, 153, 0.56));
+            color: white;
+            border: none;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="one"></div>
+    <div class="form">
+        <div class="reg">
+            <div class="header">
+                <h1>Sign In </h1>
+            </div>
+
+            First Name:
+            <br>
+            <i class="fa fa-user"  style="padding: 6px; color: rgb(247, 174, 152);"></i>
+            <input type="text" name="fname" >
+            <br> <br>
+            Last Name:
+            <br>
+            <i class="fa-solid fa-user"  style="padding: 6px; color: rgb(247, 174, 152);"></i>
+            <input type="text">
+            <br> <br>
+            Email:
+            <br> 
+            <i class="fa-solid fa-envelope" style="padding: 6px; color: rgb(247, 174, 152);" ></i>
+            <input type="Email" >
+            <br> <br>
+            Number:
+            <br> 
+            <i class="fa-solid fa-phone" style="padding: 6px; color: rgb(247, 174, 152);"></i>
+            <input type="phone" >
+            <br> <br>
+            Password:
+            <br> 
+            <i class="fa-solid fa-lock"  style="padding: 6px; color: rgb(247, 174, 152);"></i>
+            <input type="password" placeholder="password" class="pass">
+            <br> <br> <br>
+    
+           <span class="fir"> <button>Sign Up</button></span>
+           <span class="sec"> <button>Reset</button></span>
+    
+        </div>
+    </div>
+    
+</body>
+</html>

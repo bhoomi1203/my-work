@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            
+            width: 1000px;
+            height: 600px;
+            margin-left: 150px;
+            position: relative;
+            background:repeating-radial-gradient(rgb(190, 240, 190),gray);
+        }
+       
+        .inside{
+            background: linear-gradient(rgb(4, 4, 58),rgb(10, 10, 77),rgb(73, 73, 124));
+            height:500px;
+            width:700px;
+            position:absolute ;
+            top: 50px;
+            left:150px;
+            transition: transform 1s, height 1s, width 1s, font-size 1s;
+            
+        }
+
+        .inside:hover{
+            transform: scale(1.05);
+            /* width: 715px;
+            height: 515px; */
+        }
+        .header{
+            text-align: center;
+            color: rgb(231, 182, 182);
+        }
+        .one{
+             font-size: 20px;
+             margin-left: 20px;
+             color: white;
+        }
+        .one button{
+            width: 200px;
+            height: 30px;
+            margin-left: 230px;
+            margin-top: 50px;
+            background-color: white;
+            border-radius: 20px;
+            border-color: rgb(4, 11, 78);
+            transition: transform 2s, height 1s, width 1s, font-size 1s;
+        }
+
+        .one button:hover{
+            transform:scale(.7);
+            width: 210px;
+            height: 32px;
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+        .one input{
+            border-bottom-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 400px;
+            height: 25px;
+            transition: width 3s;
+        }
+        .one input:hover{
+            width:500px ;
+        }
+    </style>
+</head>
+<body>
+   <div class="main">
+       <div class="inside">
+           <div class="header">
+           <h1>Registration </h1>
+           </div>  
+           <div class="one">
+               Name:
+               <br>
+               <br>
+               <input type="text" value="Enter Name">
+               <br>
+               <br>
+               Email:
+               <br><br>
+               <input type="text" value="Enter Email">
+               <br> <br>
+               Address:
+               <br> <br>
+               <input type="textarea" value=" Enter Address">
+               <br> <br>
+               <button>Submit</button>
+           </div> 
+       </div>
+   </div> 
+</body>
+</html>

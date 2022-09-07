@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * { 
+            box-sizing: border-box;
+        } 
+        .main{
+            background-image: url(images/m8.jpg);
+            width: 50%;
+            height: 500px;
+            transition: transform 4s, height 1s, width 1s, font-size 1s;
+        }
+        .main:hover{
+            transform: scale(.7) rotate(360deg);
+        }
+        fieldset{
+           
+           width: 90%;
+           height: 450px;
+           position: relative;
+           top: 20px;
+           left: 30px;
+           box-sizing: border-box;
+           border: solid white 1px;
+        }
+         legend{
+            
+             position: absolute;
+             bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+            padding: 0 5px;
+            background: white;
+            /* color: white;sss */
+         } 
+       
+    </style>
+</head>
+<body>
+    <div class="main">
+    <fieldset>
+        <legend>my name</legend>
+       
+    </fieldset>
+    </div>
+</body>
+</html>

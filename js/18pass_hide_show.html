@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #hidebtn{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <input type="password" id="passinput" />
+   <button onclick="shwpass()" id="showbtn">show</button> 
+   <button onclick="hidpass()" id="hidebtn">hide</button>
+   <input type="checkbox" onclick="hideshow()" id="checkbox" />
+
+   <script>
+       var passwordinput=document.getElementById("passinput");
+       var showbtn=document.getElementById("showbtn");
+       var hidebtn=document.getElementById("hidebtn");
+       var checkbox=document.getElementById("checkbox");
+
+       function hideshow() {
+           if(passwordinput.type=="password") {
+               passwordinput.type="text";
+               showbtn.style.display="none";
+               hidebtn.style.display="inline-block";
+           }
+
+           else{
+               passwordinput.type="password";
+               hidebtn.style.display="none";
+               showbtn.style.display="inline-block";
+
+           }
+
+       }
+
+       function shwpass() {
+           passwordinput.type="text";
+           showbtn.style.display="none";
+           hidebtn.style.display="inline-block";
+           checkbox.checked=true;
+
+       }
+
+       function hidpass() {
+           passwordinput.type="password";
+           hidebtn.style.display="none";
+           showbtn.style.disply="inline-block";
+           checkbox.checked=false;
+       }
+   </script>
+</body>
+</html>

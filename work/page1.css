@@ -1,0 +1,122 @@
+.main{
+    background-image: url(images/m8.jpg);
+    width:50%;
+    height: 600px;
+    margin-left: 400px;
+    filter: blur(2px);
+
+}
+.one{
+    width: 50%;
+    height: 550px;
+    margin-left: 400px;
+    margin-top: -600px;
+    z-index: 2;
+    position: absolute;
+}
+/* .main::before{
+    opacity: .5;
+    width: 50%;
+    height: 600px;
+
+} */
+.logo img
+{
+    height:70px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-left: 10px;
+    
+}
+ .border{
+    width: 93%;
+    height: 550px;
+    border: 2px solid rgb(9, 207, 174);
+    margin-top: -55px;
+    margin-left: 20px;
+} 
+.text{
+    width:20%;
+    height: 31px;
+    /* background-color:gray; */
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: -30px;
+    margin-left: 30px;
+    border:transparent;
+    color: white;
+}
+.under{
+    margin-top: -400px;
+    margin-left: 10px;
+    opacity: 1!important;
+}
+.undera{
+    width: 150px;
+    height: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgb(248, 223, 186);
+    opacity: 1;
+    float: left;
+    margin-left: 50px;
+   
+}
+.underb{
+    width: 150px;
+    height: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgb(248, 223, 186);
+    float: left;
+    margin-left: 50px;
+}
+.underc{
+    width: 150px;
+    height: 200px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: rgb(248, 223, 186);
+    float: left;
+    margin-left: 50px;
+}
+.img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 25px;
+    margin-top: 20px;
+}
+ .bordera{
+    width: 87%;
+    height: 150px;
+    border: 3px double white;
+    /* background-color: white; */
+    margin-top: 150px;
+    margin-left: 42px;
+} 
+.button button{
+    border: none;
+    margin-left: 380px;
+    margin-top: 65px;
+    background-color: rgb(105, 105, 129);
+    color: white;
+    width:150px;
+    height: 28px;
+}
+.button a{
+    text-decoration: none;
+    color: black;
+    color: white;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} 
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: -550px;
+    margin-left: 300px;
+    color:rgb(176, 233, 19);
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            background: linear-gradient(to right, gray,red,green);
+        }
+        .x{
+            border-top: 12px solid yellow;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            height: 300px;
+            width: 300px;
+            margin: auto; 
+            margin-top: 150px;
+            border-radius: 50%;
+            padding: 15px;
+            animation: preloader 1s linear infinite;
+        }
+
+        .y{
+            border-top: 12px solid green;
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            height: 200px;
+            width: 200px;
+            margin: auto; 
+            
+            border-radius: 50%;
+            padding: 15px;
+            animation: preloader 2s linear infinite;
+         }
+         .z{
+            border-top: 12px solid rgb(223, 223, 179);
+            border-bottom: 12px solid transparent;
+            border-left: 12px solid transparent;
+            border-right: 12px solid transparent;
+            height: 150px;
+            width: 150px;
+            margin: auto; 
+            
+            border-radius: 50%;
+            padding: 15px;
+            animation: preloader 3s linear infinite;
+          }
+          @keyframes preloader {
+              from{transform: rotate(0deg);}
+              to{transform: rotate(360deg);}
+              
+          }
+             
+    </style>
+</head>
+<body>
+    <div class="x">
+        <div class="y">
+            <div class="z"></div>
+        </div>
+    </div>
+</body>
+</html>

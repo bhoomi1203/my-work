@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .myclass{
+            color: red;
+            background-color: gray;
+            text-align: center;
+        }
+        .myclass::after{
+            content: "hello";
+        }
+        .two{
+            color: aquamarine;
+            background-color: burlywood;
+        }
+
+    </style>
+
+    <script src="jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#add').click(function(){
+                $('.one').addClass('myclass');
+            })
+
+                // $('#remove').click(function(){
+                //     $('h2').removeClass('two');
+                // })
+
+                $('#remove').click(function(){
+                    $('h2').toggleClass('two');
+                })
+        
+        })
+    </script>
+</head>
+<body>
+    <button id="add">Add</button>
+    <h1 class="one">Hello all</h1>
+    <button id="remove">remove</button>
+    <h2 class="two">My web</h2>
+</body>
+</html>

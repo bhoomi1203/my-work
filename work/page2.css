@@ -1,0 +1,43 @@
+.main{
+    background-color: rgb(21, 21, 61);
+    width: 60%;
+    height: 550px;
+    margin-left: 250px;
+}
+.img img{
+    height: 200px;
+    width: 200px;
+    margin-top: 180px;
+    margin-left: 50px;
+}
+.round{
+    width: 100%;
+    height: auto;
+    margin-top: -370px;
+}
+.rounda{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: azure;
+    float: left;
+    margin-left: 10px;
+    background: linear-gradient( 120deg, rgb(83, 95, 95), rgb(29, 173, 149) );
+    box-shadow: 2px 3px 4px white inset;
+}
+.roundb{
+    width: 100%;
+    height: auto;
+    margin-top: 480px;
+}
+.roundc{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: azure;
+    float: left;
+    margin-left: 10px;
+    background: linear-gradient( -120deg, rgb(83, 95, 95), rgb(29, 173, 149) );
+    box-shadow: 2px 3px 4px white ;
+}
+

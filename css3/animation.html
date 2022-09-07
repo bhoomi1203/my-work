@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+            height: 600px;
+            background:linear-gradient(180deg,gray,rgb(238, 185, 176),rgb(127, 220, 236));
+        }
+        .one{
+            border-top: 15px solid rgb(243, 130, 130);
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            height: 400px;
+            width: 400px;
+            animation: frame 2s linear infinite;
+            border-radius: 50%;
+            margin: auto;
+
+        }
+        .two{
+            border-top: 15px solid rgb(42, 114, 102);
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            height: 300px;
+            width: 300px;
+            animation: frame 2s linear infinite;
+            border-radius: 50%;
+            margin-top: -400px;
+            margin-left: 510px;
+        }
+        .three{
+            border-top: 15px solid rgb(165, 69, 109);
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            height: 200px;
+            width: 200px;
+            animation: frame 2s linear infinite;
+            border-radius: 50%;
+            margin-top: -300px;
+            margin-left: 560px;
+        }
+        @keyframes frame {
+            from{transform: rotate(0deg);}
+            to{transform: rotate(360deg);}
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    </div>
+</body>
+</html>

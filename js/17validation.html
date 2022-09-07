@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" onsubmit="submitdata()">
+        <table border="1" align="center">
+            <tr>
+                <td>name:</td>
+                <td><input type="text" name="name" onblur="validdata(this,'nameError')">
+                    <span id="nameError"></span>
+                </td>
+               
+            </tr>
+            <tr>
+                <td>password:</td>
+                <td><input type="password" name="password" onblur="validdata(this,'passerror')">
+                    <span id="passerror"></span>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>email</td>
+                <td><input type="email" name="email" onblur="validdata(this,'emailerror')">
+                    <span id="emailerror"></span>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>number</td>
+                <td><input type="text" name="number" onblur="validdata(this,'numerror')">
+                <span id="numerror"></span>
+                </td>
+                <tr >
+                    <td colspan="2" align="center"><input type="submit" value="submit"></td>
+                </tr>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
+<script>
+      function validdata(e,spnid)
+       {
+
+        console.log(e);
+        if(e.value=="")
+        {
+           document.getElementById(spnid).style.color="red";
+           document.getElementById(spnid).innerText="plz enter the data";
+           return false;
+        }
+
+        else
+        {
+            document.getElementById(spnid).innerText="";
+        }
+      }
+
+</script>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            height: 50px;
+            width: 500px;
+            animation: test 5s;
+            background-color: darkcyan;
+            position: relative;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-delay: 1s;
+            margin-top: 200px;
+            margin-left: 300px;
+        
+        }
+
+        @keyframes test {
+           0%{background-color: darkcyan;  height: 300px; width: 300px;} 
+           25%{background-color: blueviolet; height: 150px; width: 150px;}
+           50%{background-color: darkgray;  height: 250px; width: 250px;}
+           75%{background-color: darkslategray; height: 80px; width: 300px;}
+           100%{background-color: lightcoral; height: 0px; width: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+</body>
+</html>
